@@ -32,6 +32,39 @@ section.welcome label {
     width: 150px;
 }
 
+section.messages {
+    width: 400px;
+}
+section.messages li {
+    text-align: left;
+    border: 1px solid #ccc;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+
+section.messages li img.gravatar {
+    float: left;
+    padding: 0 20px 0 0;
+}
+
+section.messages li div.nickName {
+    font-weight: bold;
+}
+
+section.messages li time {
+    color: #ccc;
+}
+
+section.messages li p {
+    font-size: 15px;
+    padding: 0 5px;
+}
+
+section.inputArea {
+    width: 300px;
+}
+
+
 h1 {
     color: #cccccc;
     font-size: 23px;
