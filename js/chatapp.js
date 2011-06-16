@@ -260,6 +260,11 @@ window.ChatApp.MessageInputView = Backbone.View.extend({
         "submit form" : "connect"
     },
 
+    initialize : function() {
+        this.el.show();
+    },
+
+
     connect : function(evt) {
         evt.preventDefault();
         var message = this.$('input[name=message]').val();
@@ -370,8 +375,6 @@ window.ChatApp.Application = Backbone.View.extend({
     }
 
 });
-
-
 
 /**
  * Using jQuery's DOM.ready to fire up the application.
