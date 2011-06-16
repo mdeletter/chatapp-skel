@@ -14,15 +14,26 @@ ul,p, h1 {
 }
 
 section {
-    background-color: #ffffff;
-    padding: 5px 10px;
     margin: 0 auto;
     padding: 10px;
-    width: 80%;
+    width: 400px;
 }
 
-section.welcome {
-    width: 300px;
+section.userList {
+    position: absolute;
+    width: 100px;
+}
+
+section.userList li {
+    text-align: center;
+    width: 50px;
+    background-color: #fff;
+    padding: 5px 0 0 0;
+    margin: 0 0 3px 0;
+}
+
+section.userList li .nickName {
+    font-weight: bold;
 }
 
 section.welcome p {
@@ -40,6 +51,7 @@ section.messages li {
     border: 1px solid #ccc;
     padding: 3px;
     margin-bottom: 5px;
+    background-color: #fff;
 }
 
 section.messages li img.gravatar {
@@ -58,10 +70,6 @@ section.messages li time {
 section.messages li p {
     font-size: 15px;
     padding: 0 5px;
-}
-
-section.inputArea {
-    width: 300px;
 }
 
 

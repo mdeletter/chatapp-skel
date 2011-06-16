@@ -297,6 +297,21 @@ window.ChatApp.MessageInputView = Backbone.View.extend({
  */
 window.ChatApp.UserListView = Backbone.View.extend({
 
+    initialize : function() {
+        this.el.show();
+        this.collection.bind('add', _.bind(this.addUser, this));
+    },
+
+    addUser : function(userModel) {
+
+        var template = this.$('.template').clone();
+
+        template.find('.gravatar').attr('src', userModel.get('gravatar'));
+        template.find('.nickName').text(userModel.get('nickName'));
+        template.removeClass('template');
+        template.appendTo(this.el.find('ul'));
+    }
+
 });
 
 /**
